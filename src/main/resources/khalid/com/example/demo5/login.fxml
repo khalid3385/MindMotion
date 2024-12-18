@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="khalid.com.example.demo5.logincontroller">
+   <children>
+      <!-- VBox containing the controls -->
+      <VBox fx:id="vbox" spacing="10" alignment="CENTER" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="100.0">
+         <ImageView fitHeight="142.0" fitWidth="152.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/logo.png" />
+            </image>
+         </ImageView>
+
+         <TextField fx:id="usernameField" prefHeight="32.0" prefWidth="180.0" promptText="gebruikersnaam" />
+         <PasswordField fx:id="passwordField" prefHeight="32.0" prefWidth="180.0" promptText="wachtwoord" visible="true"/>
+         <CheckBox fx:id="showPasswordCheckBox" mnemonicParsing="false" onAction="#togglePasswordVisibility" text="Toon wachtwoord" />
+         <Label fx:id="loginMessagelabel" prefHeight="32.0" prefWidth="223.0" textFill="RED" />
+         <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="32.0" prefWidth="180.0" style="-fx-background-color: #021334;" text="login" textFill="#d0ae43" />
+         <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: #021334;" text="cancel" textFill="#d0ae43" />
+      </VBox>
+   </children>
+</AnchorPane>
